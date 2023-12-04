@@ -1,0 +1,68 @@
+@use "../globals" as *;
+
+.header {
+  position: fixed;
+  color: $text-white;
+  top: 0;
+  padding: 0.75rem;
+  width: 100%;
+  box-shadow: 0 10px 15px -3px #2a0e61c2, 0 4px 6px -2px #2a0e6188;
+  backdrop-filter: blur(12px);
+  background: #03001417;
+  z-index: 4;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      p {
+        font-size: 1rem;
+        font-weight: 800;
+        color: $text-grey-header;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 500px;
+
+      @media (min-width: 768px) {
+        margin-right: 5rem;
+      }
+
+      &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 9999px;
+        width: 100%;
+        padding: 0.75rem;
+        height: auto;
+        border: 1px solid #7042f861;
+        background: #0300145e;
+        margin-right: 15px;
+
+        a {
+          color: $text-grey;
+          cursor: pointer;
+          text-decoration: none;
+
+          &:hover {
+            color: $text-white;
+          }
+        }
+      }
+    }
+
+    &__socials {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
