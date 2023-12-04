@@ -3,6 +3,7 @@ import * as THREE from "three";
 
 const Particles = () => {
   const sceneRef = useRef(null);
+  const particlesRef = useRef(null);
 
   useEffect(() => {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -36,6 +37,7 @@ const Particles = () => {
       new THREE.Float32BufferAttribute(particlesVertices, 3)
     );
     const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+    particlesRef.current = particles;
     scene.add(particles);
 
     const handleResize = () => {
@@ -70,11 +72,12 @@ const Particles = () => {
   return (
     <div
       style={{
-        position: "relative",
+        position: "fixed",
+        top: 0,
+        left: 0,
         width: "100%",
         height: "100%",
-        overflow: "hidden",
-        pointerEvents: "auto",
+        pointerEvents: "none",
       }}
     >
       <div style={{ width: "100%", height: "100%" }} ref={sceneRef} />

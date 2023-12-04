@@ -9,7 +9,7 @@
   box-shadow: 0 10px 15px -3px #2a0e61c2, 0 4px 6px -2px #2a0e6188;
   backdrop-filter: blur(12px);
   background: #03001417;
-  z-index: 4;
+  z-index: 999;
 
   &__content {
     display: flex;

@@ -23,7 +23,6 @@ main {
         left: 0;
         width: 100%;
         min-height: 100%;
-        background-color: rgba(0, 0, 0, 0.09);
         z-index: 2;
       }
 
@@ -40,12 +39,13 @@ main {
 
       &__about-me {
         display: flex;
+        position: absolute;
         padding-left: 5rem;
         padding-right: 5rem;
-        margin-top: 10rem;
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: 100vh;
         z-index: 10;
 
         &__1 {

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   box-shadow: 0 10px 15px -3px rgba(42, 14, 97, 0.7607843137), 0 4px 6px -2px rgba(42, 14, 97, 0.5333333333);
   backdrop-filter: blur(12px);
   background: rgba(3, 0, 20, 0.0901960784);
-  z-index: 4;
+  z-index: 999;
 }
 .header__content {
   display: flex;
@@ -90,7 +91,6 @@ main .container__content .overlay {
   left: 0;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.09);
   z-index: 2;
 }
 main .container__content__video {
@@ -105,12 +105,13 @@ main .container__content__video {
 }
 main .container__content__about-me {
   display: flex;
+  position: absolute;
   padding-left: 5rem;
   padding-right: 5rem;
-  margin-top: 10rem;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh;
   z-index: 10;
 }
 main .container__content__about-me__1 {
@@ -157,6 +158,52 @@ main .container__content__about-me__1__about p a {
   color: #a5a5a5;
   font-weight: 700;
   font-style: italic;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+  height: 100vh;
+  width: 100%;
+}
+.skills__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  padding: 2rem;
+}
+.skills__box__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 10;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+.skills__box__text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.skills__box__text p {
+  font-size: 1.2rem;
+  color: #a5a5a5;
+  font-style: italic;
+}
+.skills__box__skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skills__box__skills__1 {
+  z-index: 10;
+}
+.skills__box__skills__1 img {
+  width: auto;
+  height: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

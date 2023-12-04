@@ -2,6 +2,9 @@ import React from "react";
 import Space from "../Particles";
 import Header from "../components/Header";
 import Video from "../images/video/blackhole.webm";
+import SkillSection from "../components/SkillSection";
+
+import { SKILL_DATA } from "../data";
 
 const Home = () => {
   return (
@@ -36,6 +39,8 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          <SkillSection data={SKILL_DATA} />
         </div>
       </main>
     </>
