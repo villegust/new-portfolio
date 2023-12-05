@@ -2,9 +2,13 @@ import React from "react";
 import Space from "../Particles";
 import Header from "../components/Header";
 import Video from "../images/video/blackhole.webm";
-import SkillSection from "../components/SkillSection";
 
-import { SKILL_DATA } from "../data";
+import SkillSection from "../components/SkillSection";
+import ProjectSection from "../components/ProjectSection";
+import Footer from "../components/Footer";
+
+import { SKILL_DATA } from "../data/data";
+import { PROJECT_DATA } from "../data/data";
 
 const Home = () => {
   return (
@@ -39,8 +43,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           <SkillSection data={SKILL_DATA} />
+          <ProjectSection data={PROJECT_DATA} />
+
+          <Footer />
         </div>
       </main>
     </>

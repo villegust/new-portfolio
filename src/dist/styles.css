@@ -71,7 +71,6 @@ body {
 
 main {
   width: 100%;
-  min-height: 100%;
 }
 main .container {
   display: flex;
@@ -81,16 +80,10 @@ main .container {
 main .container__content {
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 100%;
   min-height: 100vh;
 }
 main .container__content .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
   z-index: 2;
 }
 main .container__content__video {
@@ -105,7 +98,6 @@ main .container__content__video {
 }
 main .container__content__about-me {
   display: flex;
-  position: absolute;
   padding-left: 5rem;
   padding-right: 5rem;
   justify-content: center;
@@ -204,6 +196,179 @@ main .container__content__about-me__1__about p a {
 .skills__box__skills__1 img {
   width: auto;
   height: 5rem;
+}
+
+.project-section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  z-index: 100;
+  height: 100%;
+}
+.project-container__title {
+  padding-top: 6rem;
+  text-align: center;
+}
+.project-container__title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(180deg, rgb(23, 204, 205) 0%, rgb(139, 92, 246) 62%);
+  background-color: #8b5cf6;
+}
+.project-container__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 6rem;
+  width: 70%;
+}
+.project-container__content__box {
+  border: 1px solid #8b5cf6;
+  border-radius: 1rem;
+  max-width: 23rem;
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  flex-direction: column; /* Updated to column layout */
+}
+.project-container__content__box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-container__content__box__text {
+  padding: 1.5rem;
+  max-width: 80%;
+  position: relative;
+}
+.project-container__content__box__text h1 {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.project-container__content__box__text p {
+  line-height: 1.5;
+}
+.project-container__content__box__links {
+  margin-top: auto; /* Pushes links to the bottom */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.project-container__content__box__links__btn {
+  min-width: 40%;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #271849;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.project-container__content__box__links__btn span {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 1.2rem;
+}
+.project-container__content__box__links__btn:hover {
+  opacity: 0.5;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  top: 0;
+  padding: 0.75rem;
+  box-shadow: 0 10px 15px 10px rgba(42, 14, 97, 0.7607843137), 0 4px 6px 4px rgba(42, 14, 97, 0.5333333333);
+  backdrop-filter: blur(3px);
+  background: rgba(3, 0, 20, 0.0274509804);
+  height: fit-content;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 80rem;
+}
+.footer-container .footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem;
+}
+.footer-container .footer-text h1 {
+  font-size: 1.8rem;
+}
+.footer-container .footer-text p {
+  line-height: 1.5;
+}
+.footer-container .footer-text__socials {
+  display: flex;
+  gap: 1rem;
+}
+.footer-container .footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container .footer-contact .btn-glitch-fill {
+  display: inline-block;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 13px;
+  min-width: 175px;
+  line-height: 1.5em;
+  white-space: no-wrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-container .footer-contact .btn-glitch-fill__text {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-container .footer-contact .btn-glitch-fill:hover, .footer-container .footer-contact .btn-glitch-fill:focus {
+  animation-name: glitch;
+  animation-duration: 0.2s;
+  background-color: rgba(42, 14, 97, 0.7607843137);
+  border: 1px solid rgb(74, 7, 209);
+}
+@keyframes glitch {
+  25% {
+    background-color: rgba(72, 10, 197, 0.7607843137);
+    transform: translateX(-10px);
+    letter-spacing: 10px;
+  }
+  35% {
+    background-color: rgba(26, 14, 97, 0.761);
+    transform: translate(10px);
+  }
+  59% {
+    opacity: 0;
+  }
+  60% {
+    background-color: rgba(52, 5, 145, 0.761);
+    transform: translate(-10px);
+    filter: blur(5px);
+  }
+  100% {
+    background-color: rgba(42, 14, 97, 0.7607843137);
+    blur: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

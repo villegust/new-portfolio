@@ -3,7 +3,6 @@
 // main
 main {
   width: 100%;
-  min-height: 100%;
 
   .container {
     display: flex;
@@ -13,16 +12,10 @@ main {
     &__content {
       display: flex;
       flex-direction: column;
-      position: relative;
       width: 100%;
       min-height: 100vh;
 
       .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-height: 100%;
         z-index: 2;
       }
 
@@ -39,7 +32,6 @@ main {
 
       &__about-me {
         display: flex;
-        position: absolute;
         padding-left: 5rem;
         padding-right: 5rem;
         justify-content: center;
