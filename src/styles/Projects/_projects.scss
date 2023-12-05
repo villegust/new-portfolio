@@ -56,8 +56,12 @@
 
       &__text {
         padding: 1.5rem;
-        max-width: 80%;
+        width: 80%;
         position: relative;
+
+        @media (max-width: 500px) {
+          width: 100%;
+        }
 
         h1 {
           font-size: 1.6rem;
@@ -88,6 +92,21 @@
             display: flex;
             gap: 0.3rem;
             font-size: 1.2rem;
+          }
+
+          @media (max-width: 500px) {
+            &__btn {
+              min-width: none;
+            }
+
+            span {
+              display: flex;
+              justify-content: center;
+            }
+
+            p {
+              display: none;
+            }
           }
 
           &:hover {

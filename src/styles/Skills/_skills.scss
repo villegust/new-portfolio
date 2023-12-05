@@ -33,6 +33,10 @@
         font-size: 1.2rem;
         color: $text-grey;
         font-style: italic;
+
+        @media (max-width: 500px) {
+          text-align: center;
+        }
       }
     }
 

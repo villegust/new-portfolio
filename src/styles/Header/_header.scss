@@ -17,10 +17,15 @@
     align-items: center;
 
     &__logo {
-      p {
+      a {
         font-size: 1rem;
         font-weight: 800;
         color: $text-grey-header;
+        text-decoration: none;
+
+        &:hover {
+          color: $text-white;
+        }
       }
     }
 
@@ -34,6 +39,10 @@
 
       @media (min-width: 768px) {
         margin-right: 5rem;
+      }
+
+      @media (max-width: 500px) {
+        display: none;
       }
 
       &__links {

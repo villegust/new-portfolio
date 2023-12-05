@@ -1,12 +1,13 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__content">
         <div className="header__content__logo">
-          <p>Vilhelm Gustavsson</p>
+          <Link to="/">Vilhelm Gustavsson</Link>
         </div>
 
         <div className="header__content__nav">

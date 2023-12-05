@@ -29,7 +29,7 @@ const ProjectSection = ({ data }) => {
                     >
                       <span>
                         <FaGithub />
-                        Github Repo
+                        <p>Github Repo</p>
                       </span>
                     </a>
                   ) : (
@@ -42,7 +42,7 @@ const ProjectSection = ({ data }) => {
                     >
                       <span>
                         <TbExternalLink />
-                        Live Website
+                        <p>Live Website</p>
                       </span>
                     </a>
                   ) : (

@@ -11,92 +11,14 @@ footer {
   background: #03001407;
   height: fit-content;
   width: 100%;
+  padding: 3rem;
   z-index: 10;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  width: 80rem;
+  text-align: center;
 
-  .footer-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 30rem;
-
-    h1 {
-      font-size: 1.8rem;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-
-    &__socials {
-      display: flex;
-      gap: 1rem;
-    }
-  }
-
-  .footer-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .btn-glitch-fill {
-      display: inline-block;
-      border: 1px solid white;
-      color: white;
-      padding: 10px 13px;
-      min-width: 175px;
-      line-height: 1.5em;
-      white-space: no-wrap;
-      text-transform: uppercase;
-      cursor: pointer;
-      text-decoration: none;
-
-      &__text {
-        display: inline-block;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      &:hover,
-      &:focus {
-        animation-name: glitch;
-        animation-duration: 0.2s;
-        background-color: #2a0e61c2;
-        border: 1px solid rgb(74, 7, 209);
-      }
-    }
-
-    @keyframes glitch {
-      25% {
-        background-color: #480ac5c2;
-        transform: translateX(-10px);
-        letter-spacing: 10px;
-      }
-      35% {
-        background-color: rgba(26, 14, 97, 0.761);
-        transform: translate(10px);
-      }
-      59% {
-        opacity: 0;
-      }
-      60% {
-        background-color: rgba(52, 5, 145, 0.761);
-        transform: translate(-10px);
-        filter: blur(5px);
-      }
-      100% {
-        background-color: #2a0e61c2;
-        blur: (5px);
-      }
-    }
+  p {
+    font-size: 1.2rem;
   }
 }
