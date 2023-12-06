@@ -47,9 +47,7 @@ const About = () => {
             <div className="back-arrow" onClick={handleBack}>
               <FaArrowLeft size={30} />
             </div>
-            <h1>
-              <span>About me</span>
-            </h1>
+            <h1>About me</h1>
           </div>
 
           <div className="about-container__text">
@@ -59,7 +57,7 @@ const About = () => {
             <div className="about-container__text__about">
               <p>
                 My name is Vilhelm Gustavsson and I am a High School Software
-                Engineer from Sweden. During my passed years in school I have
+                Engineer from Sweden. During my passed years in school I
                 primarly worked on project using programming languages such as
                 python, html, css and javascript. I have also finished studying
                 a fourth year of high school at NTI where I got to work on

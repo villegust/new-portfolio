@@ -34,7 +34,7 @@ const LandingPage = ({ setFadeOut }) => {
             <p>
               I'm a Frontend Developer with experience in different technologies
               such as NextJS, NodeJS, ReactJS and more. Check out my{" "}
-              <a href="#projects">projects</a> and <a href="#skills">skills</a>.
+              <a href="#skills">skills</a> and <a href="#projects">projects</a>.
             </p>
             <div className="learn-more">
               <button onClick={handleLearnMore}>Learn more about me</button>

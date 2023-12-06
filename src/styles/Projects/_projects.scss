@@ -20,14 +20,8 @@
     h1 {
       font-size: 3rem;
       font-weight: 700;
-      color: transparent;
-      background-clip: text;
-      background-image: linear-gradient(
-        180deg,
-        rgba(23, 204, 205, 1) 0%,
-        rgba(139, 92, 246, 1) 62%
-      );
-      background-color: #8b5cf6;
+      color: $text-white;
+      text-transform: uppercase;
     }
   }
 

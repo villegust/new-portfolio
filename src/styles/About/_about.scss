@@ -42,16 +42,9 @@
     h1 {
       font-size: 3rem;
       font-weight: 900;
-      font-style: italic;
+      text-transform: uppercase;
 
-      color: transparent;
-      background-clip: text;
-      background-image: linear-gradient(
-        17deg,
-        rgba(23, 204, 205, 1) 0%,
-        rgba(139, 92, 246, 1) 49%
-      );
-      background-color: #8b5cf6;
+      color: $text-white;
 
       @media (max-width: 700px) {
         font-size: 2.5rem;
@@ -107,6 +100,7 @@
       p {
         font-size: 1.2rem;
         line-height: 1.5;
+        color: $text-grey;
       }
     }
   }
@@ -126,7 +120,7 @@
         color: $text-grey-header;
         font-size: 2rem;
         font-weight: 900;
-        font-style: italic;
+        text-transform: uppercase;
       }
     }
 
@@ -181,7 +175,7 @@
         color: $text-grey-header;
         font-size: 2rem;
         font-weight: 900;
-        font-style: italic;
+        text-transform: uppercase;
       }
     }
 
