@@ -168,7 +168,7 @@ main .container__content__video {
 }
 @media (max-width: 500px) {
   main .container__content__video {
-    top: -350px;
+    display: none;
   }
 }
 main .container__content__about-me {
@@ -241,6 +241,7 @@ main .container__content__about-me__1__about .learn-more button {
   background-image: linear-gradient(17deg, rgb(23, 204, 205) 0%, rgb(139, 92, 246) 49%);
   background-color: #8b5cf6;
   border: none;
+  border-radius: 2rem;
   padding: 1rem;
   font-size: 1rem;
   color: #ffffff;
@@ -419,13 +420,19 @@ main .container__content__about-me__1__about .learn-more button:hover {
   padding: 2rem;
   z-index: 20;
 }
+@media (max-width: 700px) {
+  .about-container {
+    width: 100%;
+    border: none;
+  }
+}
 .about-container__title {
   display: flex;
   align-items: center;
 }
 @media (max-width: 700px) {
   .about-container__title {
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 .about-container__title .back-arrow {
@@ -443,6 +450,11 @@ main .container__content__about-me__1__about .learn-more button:hover {
   background-clip: text;
   background-image: linear-gradient(17deg, rgb(23, 204, 205) 0%, rgb(139, 92, 246) 49%);
   background-color: #8b5cf6;
+}
+@media (max-width: 700px) {
+  .about-container__title h1 {
+    font-size: 2.5rem;
+  }
 }
 .about-container .cert {
   display: flex;
@@ -629,9 +641,10 @@ main .container__content__about-me__1__about .learn-more button:hover {
   align-items: center;
   padding: 1rem;
   border-radius: 2rem;
-}
-.popup-container .popup__content__box:active {
   text-decoration: none;
+}
+.popup-container .popup__content__box:hover p {
+  color: #cacaca;
 }
 .popup-container .popup__content__box__image {
   width: 10rem;
@@ -649,7 +662,6 @@ main .container__content__about-me__1__about .learn-more button:hover {
 }
 .popup-container .popup__content__box__text p {
   color: #ffffff;
-  text-decoration: none;
 }
 
 footer {

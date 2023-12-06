@@ -53,9 +53,12 @@
         align-items: center;
         padding: 1rem;
         border-radius: 2rem;
+        text-decoration: none;
 
-        &:active {
-          text-decoration: none;
+        &:hover {
+          p {
+            color: $text-grey-header;
+          }
         }
 
         &__image {
@@ -75,7 +78,6 @@
           text-align: center;
           p {
             color: $text-white;
-            text-decoration: none;
           }
         }
       }
