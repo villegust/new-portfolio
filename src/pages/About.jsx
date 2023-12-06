@@ -57,11 +57,11 @@ const About = () => {
             <div className="about-container__text__about">
               <p>
                 My name is Vilhelm Gustavsson and I am a High School Software
-                Engineer from Sweden. During my passed years in school I
-                primarly worked on project using programming languages such as
-                python, html, css and javascript. I have also finished studying
-                a fourth year of high school at NTI where I got to work on
-                projects in groups using Scrum.
+                Engineer from Sweden. During my past years in school I primarily
+                worked on project using programming languages such as python,
+                html, css and javascript. I also finished studying a fourth year
+                of high school at NTI where I got to work on projects in groups
+                using Scrum.
               </p>
             </div>
           </div>
