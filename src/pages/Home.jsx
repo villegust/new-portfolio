@@ -45,15 +45,15 @@ const Home = () => {
 
                 <div className="container__content__about-me__1__about">
                   <p>
-                    I'm a Frontend / Full Stack Web Developer with experience in
-                    different technologies such as NextJS, NodeJS, ReactJS and
-                    more. Check out my <a href="#projects">projects</a> and{" "}
+                    I'm a Frontend Developer with experience in different
+                    technologies such as NextJS, NodeJS, ReactJS and more. Check
+                    out my <a href="#projects">projects</a> and{" "}
                     <a href="#skills">skills</a>.
                   </p>
                   <div className="learn-more">
-                    {/* <button onClick={handleLearnMore}>
+                    <button onClick={handleLearnMore}>
                       Learn more about me
-                    </button> */}
+                    </button>
                   </div>
                 </div>
               </div>
