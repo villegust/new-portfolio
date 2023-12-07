@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdClose } from "react-icons/io";
 
-import Cert from "../images/cert/cert.png";
+import Cert from "../../images/cert/cert.png";
 
 const Popup = ({ onClose }) => {
   return (

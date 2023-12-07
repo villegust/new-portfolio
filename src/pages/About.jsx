@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 import Particles from "../Particles";
 import Profile from "../images/profile/profile.jpg";
-import Popup from "../components/Popup";
+import Popup from "../components/About/Popup";
 
 const About = () => {
   const [fadeOut, setFadeOut] = useState(false);
