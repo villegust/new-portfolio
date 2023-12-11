@@ -139,6 +139,28 @@ body {
   gap: 1rem;
 }
 
+.mobileNav {
+  position: fixed;
+  color: #ffffff;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 10px 15px 6px rgba(42, 14, 97, 0.7607843137), 0 4px 6px 4px rgba(42, 14, 97, 0.5333333333);
+  backdrop-filter: blur(12px);
+  background: rgba(3, 0, 20, 0.0901960784);
+  z-index: 999;
+}
+.mobileNav__content {
+  display: flex;
+  justify-content: space-around;
+}
+.mobileNav__content__icon {
+  color: white;
+}
+.mobileNav__content__icon:hover {
+  opacity: 0.7;
+}
+
 main {
   width: 100%;
 }
@@ -253,6 +275,14 @@ main .container__content__about-me__1__about .learn-more button:hover {
   cursor: pointer;
   background-image: linear-gradient(17deg, rgb(15, 99, 99) 0%, rgb(80, 39, 175) 49%);
   background-color: #682df1;
+}
+main .container__content__about-me__1__about .contact-info {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+main .container__content__about-me__1__about .contact-info p {
+  padding-bottom: 0.5rem;
 }
 
 .skills {
@@ -678,6 +708,12 @@ footer {
   width: 100%;
   padding: 3rem;
   z-index: 10;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-bottom: 3rem;
+    box-shadow: 0px -7px 14px 3px rgba(42, 14, 97, 0.5333333333);
+  }
 }
 
 .footer-container {

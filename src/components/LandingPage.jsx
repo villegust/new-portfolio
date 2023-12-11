@@ -36,6 +36,16 @@ const LandingPage = ({ setFadeOut }) => {
               such as NextJS, NodeJS, ReactJS and more. Check out my{" "}
               <a href="#skills">skills</a> and <a href="#projects">projects</a>.
             </p>
+            <div className="contact-info">
+              <p>
+                Email:{" "}
+                <a href="mailto:ville.gust@gmail.com">ville.gust@gmail.com</a>
+              </p>
+
+              <p>
+                Phone: <a href="tel:0709409954">070 940 9954</a>
+              </p>
+            </div>
             <div className="learn-more">
               <button onClick={handleLearnMore}>Learn more about me</button>
             </div>

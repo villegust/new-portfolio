@@ -139,6 +139,16 @@ main {
                 }
               }
             }
+
+            .contact-info {
+              padding-top: 1.5rem;
+              display: flex;
+              flex-direction: column;
+
+              p {
+                padding-bottom: 0.5rem;
+              }
+            }
           }
         }
       }
