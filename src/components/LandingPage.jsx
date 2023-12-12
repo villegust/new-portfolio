@@ -13,6 +13,7 @@ const LandingPage = ({ setFadeOut }) => {
       navigate("/about");
     }, 500); // Wait for the fade-out animation to complete
   };
+
   return (
     <div id="about-me" className="container__content">
       <div className="overlay">

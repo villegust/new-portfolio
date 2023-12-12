@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-import IsMobile from "../components/isMobile/isMobile";
+import IsMobile from "./IsMobile/IsMobile";
 import MobileNavigation from "./MobileNavigation";
 
 const Header = () => {
