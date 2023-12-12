@@ -119,3 +119,36 @@ export const PROJECT_DATA = [
     githubLink: "https://github.com/NTIG-Uppsala/hotell-kassasystem",
   },
 ];
+
+export const EDUCATION_DATA = [
+  {
+    name: "NTI Gymnasiet Uppsala",
+    specification: "High School Software Engineer",
+    startMonth: "Aug",
+    startYear: "2022",
+    endMonth: "Jun",
+    endYear: "2023",
+    link: "https://ntigymnasiet.se/uppsala/program/gymnasieingenjorsprogrammet/mjukvarudesign/",
+  },
+  {
+    name: "NTI Gymnasiet Uppsala",
+    specification: "High School Infromation Technology Program",
+    startMonth: "Aug",
+    startYear: "2019",
+    endMonth: "Jun",
+    endYear: "2022",
+    link: "https://ntigymnasiet.se/uppsala/program/teknikprogrammet/informations-och-medieteknik/",
+  },
+];
+
+export const WORK_DATA = [
+  {
+    name: "STUNS",
+    specification: "Developer",
+    startMonth: "Feb",
+    startYear: "2023",
+    endMonth: "Apr",
+    endYear: "2023",
+    about: "Internship for my education",
+  },
+];

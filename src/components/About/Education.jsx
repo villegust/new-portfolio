@@ -1,4 +1,4 @@
-const Education = () => {
+const Education = ({ data }) => {
   return (
     <div className="about-container__education">
       <div className="about-container__education__title">
@@ -6,26 +6,19 @@ const Education = () => {
       </div>
 
       <div className="about-container__education__program">
-        <div className="about-container__education__program__box">
-          <h1>NTI Gymnasiet Uppsala</h1>
-          <p>
-            High School Software Engineer • <span>Aug 2022 - Jun 2023</span>
-          </p>
-          <a href="https://www.ntigymnasiet.se/program/mjukvarudesign/uppsala/">
-            Link to program
-          </a>
-        </div>
-
-        <div className="about-container__education__program__box">
-          <h1>NTI Gymnasiet Uppsala</h1>
-          <p>
-            High School Infromation Technology Program •{" "}
-            <span>Aug 2019 - Jun 2022</span>
-          </p>
-          <a href="https://ntigymnasiet.se/uppsala/program/teknikprogrammet/informations-och-medieteknik/">
-            Link to program
-          </a>
-        </div>
+        {data.map((education, index) => (
+          <div key={index} className="about-container__education__program__box">
+            <h1>{education.name}</h1>
+            <p>
+              {education.specification} •{" "}
+              <span>
+                {education.startMonth} {education.startYear} -{" "}
+                {education.endMonth} {education.endYear}
+              </span>
+            </p>
+            <a href={education.link}>Link to program</a>
+          </div>
+        ))}
       </div>
     </div>
   );

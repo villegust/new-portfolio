@@ -5,6 +5,9 @@ import Particles from "../Particles";
 import Education from "../components/About/Education";
 import Work from "../components/About/Work";
 
+import { EDUCATION_DATA } from "../data/data";
+import { WORK_DATA } from "../data/data";
+
 const About = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -14,8 +17,8 @@ const About = () => {
         <Particles />
         <div className="about-container">
           <AboutMe setFadeOut={setFadeOut} />
-          <Education />
-          <Work />
+          <Education data={EDUCATION_DATA} />
+          <Work data={WORK_DATA} />
         </div>
       </main>
     </>
