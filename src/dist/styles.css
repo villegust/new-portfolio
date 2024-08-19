@@ -294,8 +294,7 @@ main .container__content__about-me__1__about .contact-info p {
 .skills {
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
-  height: 100vh;
+  min-height: 50vh;
   width: 100%;
 }
 .skills__box {
@@ -304,7 +303,7 @@ main .container__content__about-me__1__about .contact-info p {
   max-width: 50rem;
   padding: 2rem;
 }
-.skills__box__text {
+.skills__box__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,18 +313,18 @@ main .container__content__about-me__1__about .contact-info p {
   color: #ffffff;
   margin-bottom: 2.5rem;
 }
-.skills__box__text h1 {
+.skills__box__title h1 {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-.skills__box__text p {
+.skills__box__title p {
   font-size: 1.2rem;
   color: #a5a5a5;
   font-style: italic;
 }
 @media (max-width: 500px) {
-  .skills__box__text p {
+  .skills__box__title p {
     text-align: center;
   }
 }
@@ -336,11 +335,33 @@ main .container__content__about-me__1__about .contact-info p {
   gap: 1rem;
 }
 .skills__box__skills__1 {
-  z-index: 10;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
-.skills__box__skills__1 img {
+.skills__box__skills__1 .skill-image {
   width: auto;
   height: 5rem;
+}
+.skills__box__skills__1 .skill-tooltip {
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 110%; /* Position above the image */
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  width: auto; /* Adjust size as needed */
+}
+.skills__box__skills__1:hover .skill-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .project-section {
@@ -357,7 +378,6 @@ main .container__content__about-me__1__about .contact-info p {
   height: 100%;
 }
 .project-container__title {
-  padding-top: 6rem;
   text-align: center;
 }
 .project-container__title h1 {
@@ -376,6 +396,7 @@ main .container__content__about-me__1__about .contact-info p {
 }
 .project-container__content__box {
   border: 1px solid #8b5cf6;
+  background-color: #000000;
   border-radius: 1rem;
   max-width: 23rem;
   overflow: hidden;
@@ -390,13 +411,8 @@ main .container__content__about-me__1__about .contact-info p {
 }
 .project-container__content__box__text {
   padding: 1.5rem;
-  width: 80%;
   position: relative;
-}
-@media (max-width: 500px) {
-  .project-container__content__box__text {
-    width: 100%;
-  }
+  border-top: 1px solid #8b5cf6;
 }
 .project-container__content__box__text h1 {
   font-size: 1.6rem;
@@ -504,6 +520,22 @@ main .container__content__about-me__1__about .contact-info p {
   .about-container .cert {
     width: 100%;
     justify-content: center;
+  }
+}
+.about-container .certificate {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .certificate p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-style: italic;
+  color: #cacaca;
+}
+@media (max-width: 700px) {
+  .about-container .certificate {
+    align-items: center;
   }
 }
 .about-container__text {
@@ -699,6 +731,20 @@ main .container__content__about-me__1__about .contact-info p {
 }
 .popup-container .popup__content__box__text p {
   color: #ffffff;
+}
+
+.hoverPopup {
+  position: absolute;
+  top: -50px; /* Position the popup above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 10;
 }
 
 footer {

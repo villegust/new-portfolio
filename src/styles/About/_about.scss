@@ -67,6 +67,23 @@
     }
   }
 
+  .certificate {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      text-decoration: underline;
+      font-style: italic;
+      color: $text-grey-header;
+    }
+
+    @media (max-width: 700px) {
+      align-items: center;
+    }
+  }
+
   // about me
   &__text {
     display: flex;

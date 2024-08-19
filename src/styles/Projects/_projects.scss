@@ -14,7 +14,6 @@
   height: 100%;
 
   &__title {
-    padding-top: 6rem;
     text-align: center;
 
     h1 {
@@ -35,6 +34,7 @@
 
     &__box {
       border: 1px solid #8b5cf6;
+      background-color: #000000;
       border-radius: 1rem;
       max-width: 23rem;
       overflow: hidden;
@@ -50,12 +50,8 @@
 
       &__text {
         padding: 1.5rem;
-        width: 80%;
         position: relative;
-
-        @media (max-width: 500px) {
-          width: 100%;
-        }
+        border-top: 1px solid #8b5cf6;
 
         h1 {
           font-size: 1.6rem;

@@ -5,7 +5,7 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import { FaArrowLeft } from "react-icons/fa";
 
 import Popup from "./Popup";
-import Profile from "../../images/profile/profile.jpg";
+import Profile from "../../images/profile/profile2.jpg";
 
 const AboutMe = ({ setFadeOut }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -58,14 +58,16 @@ const AboutMe = ({ setFadeOut }) => {
           </p>
         </div>
       </div>
+      <div className="certificate">
+        <p>My certificate:</p>
+        <LiaCertificateSolid
+          size={36}
+          className="cert"
+          onClick={handleOpenPopup}
+        />
 
-      <LiaCertificateSolid
-        size={36}
-        className="cert"
-        onClick={handleOpenPopup}
-      />
-
-      {isPopupOpen && <Popup onClose={handleClosePopup} />}
+        {isPopupOpen && <Popup onClose={handleClosePopup} />}
+      </div>
     </>
   );
 };
